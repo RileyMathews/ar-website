@@ -13,7 +13,7 @@ class Calendar extends Component {
                         <Title>
                             Calendar
                         </Title>
-                        <div className="bit-widget-initializer" data-artist-name="Almanac Ridge" data-display-local-dates="false" data-display-past-dates="true" data-auto-style="true" data-display-limit="15" data-text-color="#000000"></div>
+                        <a className="bit-widget-initializer" data-artist-name="Almanac Ridge" data-display-local-dates="false" data-display-past-dates="true" data-auto-style="true" data-display-limit="15" data-text-color="#000000"></a>
                     </Container>
                 </HeroBody>
             </Hero>
