@@ -8,7 +8,7 @@ class Social extends Component {
     render() {
         return (
             <Hero isColor='light' isSize='medium'>
-                <HeroBody className="banner">
+                <HeroBody className="banner" id="social">
                     <Container className='has-text-centered'>
                         <Title>
                             Social
