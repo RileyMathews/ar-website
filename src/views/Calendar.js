@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Hero, HeroBody, Container, Title} from 'bloomer'
+import EventsList from '../events/EventsList';
 
 
 class Calendar extends Component {
@@ -13,6 +14,9 @@ class Calendar extends Component {
                         <Title>
                             Calendar
                         </Title>
+                        <EventsList 
+                            events={this.props.events}
+                        />
                     </Container>
                 </HeroBody>
             </Hero>

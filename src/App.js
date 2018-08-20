@@ -18,7 +18,7 @@ class App extends Component {
     APIManager.getBandsintownEvents()
       .then(r => r.json())
       .then(response => {
-        console.log(response)
+        this.setState({ bandsintownEvents: response })
       })
   }
 
@@ -28,7 +28,9 @@ class App extends Component {
         <NavBar />
         <Banner />
         <Music />
-        <Calendar />
+        <Calendar 
+          events={this.state.bandsintownEvents}
+        />
         <Contact />
         <Social />
       </React.Fragment>
