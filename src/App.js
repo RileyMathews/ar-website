@@ -6,8 +6,22 @@ import Music from './views/Music';
 import Calendar from './views/Calendar';
 import Social from './views/Social';
 import Contact from './views/Contact';
+import APIManager from './managers/APIManager'
 
 class App extends Component {
+
+  state = {
+    bandsintownEvents: []
+  }
+
+  componentDidMount() {
+    APIManager.getBandsintownEvents()
+      .then(r => r.json())
+      .then(response => {
+        console.log(response)
+      })
+  }
+
   render() {
     return (
       <React.Fragment>
