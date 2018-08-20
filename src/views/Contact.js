@@ -7,7 +7,7 @@ class Contact extends Component {
 
     render() {
         return (
-            <Hero isColor='dark' isSize='medium'>
+            <Hero isColor='light' isSize='medium'>
                 <HeroBody className="banner" id="contact">
                     <Container className='has-text-centered'>
                         <Title>

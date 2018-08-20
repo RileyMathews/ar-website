@@ -15,8 +15,8 @@ class App extends Component {
         <Banner />
         <Music />
         <Calendar />
-        <Social />
         <Contact />
+        <Social />
       </React.Fragment>
     );
   }
