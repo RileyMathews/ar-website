@@ -6,8 +6,6 @@ import $ from 'jquery'
 
 class Social extends Component {
 
-    // let script = "window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'7AWgWFcxN9VcM4QDOG2'});Pixlee.addSimpleWidget({widgetId:'7876'});};"
-
     state = {
         script: "<script type=\"text/javascript\">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'7AWgWFcxN9VcM4QDOG2'});Pixlee.addSimpleWidget({widgetId:'7876'});};</script>"
     }

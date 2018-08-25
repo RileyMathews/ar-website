@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Hero, HeroBody, Container, Title} from 'bloomer'
 import EventsList from '../events/EventsList';
+import './Calendar.css'
 
 
 class Calendar extends Component {
@@ -8,8 +9,8 @@ class Calendar extends Component {
 
     render() {
         return (
-            <Hero isColor='dark' isSize='medium'>
-                <HeroBody className="banner" id="calendar">
+            <Hero isColor='dark' isSize='medium' id='banner__calendar'>
+                <HeroBody className="banner">
                     <Container className='has-text-centered'>
                         <Title>
                             Calendar

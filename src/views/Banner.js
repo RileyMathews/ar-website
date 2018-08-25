@@ -8,10 +8,10 @@ class Banner extends Component {
 
     render() {
         return (
-            <Hero isColor='dark' isSize='medium'>
-                <HeroBody className="banner" id="banner">
+            <Hero isSize='medium' id='banner__main'>
+                <HeroBody>
                     <Container className='has-text-centered'>
-                        <Title>
+                        <Title hasTextColor="white" isSize={1}>
                             Alamanac Ridge
                         </Title>
                     </Container>

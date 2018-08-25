@@ -7,10 +7,10 @@ class Music extends Component {
 
     render() {
         return (
-            <Hero isColor='light' isSize='medium'>
-                <HeroBody className="banner" id="music">
+            <Hero isColor='light' isSize='medium' id='banner__music'>
+                <HeroBody className="banner">
                     <Container className='has-text-centered'>
-                        <Title>
+                        <Title hasTextColor="white" isSize={2}>
                             Music
                         </Title>
                         <iframe title="soundcloud" width="100%" height="300" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/511451817&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>

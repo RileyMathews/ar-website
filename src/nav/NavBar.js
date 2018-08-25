@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Navbar, NavbarItem, NavbarBurger, NavbarBrand, NavbarMenu, NavbarEnd } from "bloomer";
+import './NavBar.css'
 
 
 /* 
@@ -28,17 +29,17 @@ class NavBar extends Component {
 
     render() {
         return (
-            <Navbar className="is-fixed-top">
+            <Navbar className="is-fixed-top" style={{ backgroundColor: 'black'}}>
                 <NavbarBrand>
                     <NavbarItem isHidden="desktop">{this.props.gamertag}</NavbarItem>
                     <NavbarBurger isActive={this.state.isActive} onClick={this.onClickNav} />
                 </NavbarBrand>
                 <NavbarMenu isActive={this.state.isActive}>
-                    <NavbarItem onClick={this.onClickNav} id="nav_banner">Home</NavbarItem>
-                    <NavbarItem onClick={this.onClickNav} id="nav_music">Music</NavbarItem>
-                    <NavbarItem onClick={this.onClickNav} id="nav_calendar">Tour</NavbarItem>
-                    <NavbarItem onClick={this.onClickNav} id="nav_social">Instagram</NavbarItem>
-                    <NavbarItem onClick={this.onClickNav} id="nav_contact">Contact</NavbarItem>
+                    <NavbarItem className="nav__item" onClick={this.onClickNav} id="nav_banner">Home</NavbarItem>
+                    <NavbarItem className="nav__item" onClick={this.onClickNav} id="nav_music">Music</NavbarItem>
+                    <NavbarItem className="nav__item" onClick={this.onClickNav} id="nav_calendar">Tour</NavbarItem>
+                    <NavbarItem className="nav__item" onClick={this.onClickNav} id="nav_contact">Contact</NavbarItem>
+                    <NavbarItem className="nav__item" onClick={this.onClickNav} id="nav_social">Instagram</NavbarItem>
                 </NavbarMenu>
                 <NavbarEnd>
                     <NavbarItem isHidden="touch">{this.props.gamertag}</NavbarItem>
