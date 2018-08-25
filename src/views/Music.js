@@ -8,7 +8,7 @@ class Music extends Component {
     render() {
         return (
             <Hero isColor='light' isSize='medium' id='banner__music'>
-                <HeroBody className="banner">
+                <HeroBody className="banner" id="music">
                     <Container className='has-text-centered'>
                         <Title hasTextColor="white" isSize={2}>
                             Music

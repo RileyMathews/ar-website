@@ -10,7 +10,7 @@ class Calendar extends Component {
     render() {
         return (
             <Hero isColor='dark' isSize='medium' id='banner__calendar'>
-                <HeroBody className="banner">
+                <HeroBody className="banner" id="calendar">
                     <Container className='has-text-centered'>
                         <Title>
                             Calendar

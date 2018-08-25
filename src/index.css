@@ -11,3 +11,15 @@ body {
 .text-white {
   color: white;
 }
+
+.link {
+  text-decoration: underline;
+}
+
+.no-click {
+  pointer-events: none;
+}
+
+.clickable {
+  cursor: pointer;
+}

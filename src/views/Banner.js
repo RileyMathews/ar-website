@@ -9,7 +9,7 @@ class Banner extends Component {
     render() {
         return (
             <Hero isSize='medium' id='banner__main'>
-                <HeroBody>
+                <HeroBody id="home">
                     <Container className='has-text-centered'>
                         <Title hasTextColor="white" isSize={1}>
                             Alamanac Ridge

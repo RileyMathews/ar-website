@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Media, MediaLeft, Image, MediaContent, Content, Level, LevelLeft, LevelItem, Icon, MediaRight } from 'bloomer'
-import { LevelRight } from 'bloomer/lib/components/Level/LevelRight';
+import { Media, MediaLeft, MediaContent, Content, Level, LevelLeft, LevelItem, Icon, MediaRight } from 'bloomer'
 import { Button } from 'bloomer/lib/elements/Button';
 
 
@@ -28,7 +27,7 @@ class Event extends Component {
             hour -= 12
             sideOfDay = "PM"
         }
-        if (minutes == 0) {
+        if (minutes === 0) {
             minutes = "00"
         }
         const month = months[eventDate.getMonth()]
