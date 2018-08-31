@@ -32,7 +32,7 @@ class NavBar extends Component {
             <Navbar className="is-fixed-top" style={{ backgroundColor: 'black' }}>
                 <NavbarBrand>
                     <NavbarItem>
-                        <img src={brand} style={{ marginRight: 5 }} />
+                        <img src={brand} style={{ marginRight: 5 }} alt=""/>
                     </NavbarItem>
                     <NavbarItem isHidden="desktop">{this.props.gamertag}</NavbarItem>
                     <NavbarBurger isActive={this.state.isActive} onClick={this.onClickNav} />
