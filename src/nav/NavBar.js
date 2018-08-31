@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Navbar, NavbarItem, NavbarBurger, NavbarBrand, NavbarMenu, NavbarEnd } from "bloomer";
 import './NavBar.css'
+import brand from '../images/logo.png'
 
 
 /* 
@@ -22,14 +23,17 @@ class NavBar extends Component {
 
         if (navTarget) {
             const targetElement = document.getElementById(navTarget)
-            targetElement.scrollIntoView({behavior: "smooth"})
+            targetElement.scrollIntoView({ behavior: "smooth" })
         }
     }.bind(this)
 
     render() {
         return (
-            <Navbar className="is-fixed-top" style={{ backgroundColor: 'black'}}>
+            <Navbar className="is-fixed-top" style={{ backgroundColor: 'black' }}>
                 <NavbarBrand>
+                    <NavbarItem>
+                        <img src={brand} style={{ marginRight: 5 }} />
+                    </NavbarItem>
                     <NavbarItem isHidden="desktop">{this.props.gamertag}</NavbarItem>
                     <NavbarBurger isActive={this.state.isActive} onClick={this.onClickNav} />
                 </NavbarBrand>
