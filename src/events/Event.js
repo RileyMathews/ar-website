@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Media, MediaLeft, MediaContent, Content, Level, LevelLeft, LevelItem, Icon, MediaRight } from 'bloomer'
 import { Button } from 'bloomer/lib/elements/Button';
+import { LevelRight } from 'bloomer/lib/components/Level/LevelRight';
 
 
 class Event extends Component {
@@ -49,28 +50,14 @@ class Event extends Component {
     render() {
         return (
             <Media>
-                <MediaLeft>
-                    <MediaContent>
-                        <p>{this.state.dayOfWeek} {this.state.month}, {this.state.day} {this.state.year}. {this.state.fullTime}</p>
-                    </MediaContent>
-                </MediaLeft>
                 <MediaContent>
                     <Content>
                         <p>
-                            {this.props.event.venue.name} in {this.props.event.venue.city} {this.props.event.venue.region}
+                            {this.props.event.venue.name} in {this.props.event.venue.city} {this.props.event.venue.region} {this.state.dayOfWeek} {this.state.month}, {this.state.day} {this.state.year}. {this.state.fullTime}
                         </p>
+                        <Button href={this.props.event.url} target="blank">More Info</Button>
                     </Content>
-                    <Level isMobile>
-                        <LevelLeft>
-                            <LevelItem href='#'>
-                                <Icon isSize='small'><span className="fa fa-reply" aria-hidden="true" /></Icon>
-                            </LevelItem>
-                        </LevelLeft>
-                    </Level>
                 </MediaContent>
-                <MediaRight>
-                    <Button href={this.props.event.url} target="blank">More Info</Button>
-                </MediaRight>
             </Media>
         )
     }

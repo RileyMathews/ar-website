@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import {Hero, HeroBody, Container, Title} from 'bloomer'
+import {Hero, HeroBody, Container, Title, Image} from 'bloomer'
 import './Banner.css'
+import logo from '../images/logo.png'
+
 
 
 class Banner extends Component {
@@ -11,9 +13,10 @@ class Banner extends Component {
             <Hero isSize='medium' id='banner__main'>
                 <HeroBody id="home">
                     <Container className='has-text-centered'>
-                        <Title hasTextColor="white" isSize={1}>
+                        {/* <Title hasTextColor="white" isSize={1}>
                             Alamanac Ridge
-                        </Title>
+                        </Title> */}
+                        {/* <img className="logo" src={logo} alt=""/> */}
                     </Container>
                 </HeroBody>
             </Hero>

@@ -1,5 +1,18 @@
 #banner__main {
     height: 100vh;
-    background-image: url('../images/BanjoPickin.jpeg');
+    background: url('../images/BanjoPickin.jpeg');
+    background-repeat: no-repeat;
     background-size: cover;
+}
+
+#home {
+    background: url('../images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo {
+    display: inline-block;
+    height: 20rem;
 }
