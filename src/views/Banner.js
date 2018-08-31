@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import {Hero, HeroBody, Container, Title, Image} from 'bloomer'
+import {Hero, HeroBody, Container} from 'bloomer'
 import './Banner.css'
-import logo from '../images/logo.png'
 
 
 

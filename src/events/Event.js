@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import { Media, MediaLeft, MediaContent, Content, Level, LevelLeft, LevelItem, Icon, MediaRight } from 'bloomer'
+import { Media, MediaContent, Content, } from 'bloomer'
 import { Button } from 'bloomer/lib/elements/Button';
-import { LevelRight } from 'bloomer/lib/components/Level/LevelRight';
 
 
 class Event extends Component {
